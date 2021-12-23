@@ -1,8 +1,6 @@
-# Autor: Hugo Bonilla C.
-# Módulo: Fundamentos Full Stack
-# Tarea: Actividad 1 - Final Flask
-
+""" Programa graba pedido - Author: Hugo Bonilla C. - Tarea: Actividad Final """
 def guardar_pedido(nombre, apellidos):
+    """ Programa para guardar pedido """
     with open("pedidos.txt", "a", encoding="utf-8") as file:
         file.write("Graba pedido de: " + nombre + " " + apellidos + "\n")
         file.close()

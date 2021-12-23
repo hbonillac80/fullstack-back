@@ -1,3 +1,4 @@
+""" Programa principal - Author: Hugo Bonilla C. - Tarea: Actividad Final """
 from flask import Flask, request, redirect
 # Importa módulo que hace el grabado del registro en archivo
 from persistencia import guardar_pedido
@@ -5,6 +6,7 @@ app = Flask (__name__)
 
 @app.route("/pizza", methods=['POST'])
 def pizza():
+    """ Programa para solicitar Pizza """
     nombre = request.form.get("p1_nombre")
     apellido = request.form.get("p2_apellidos")
     print("El solicitante del pedido es: "+ nombre + " " + apellido)
