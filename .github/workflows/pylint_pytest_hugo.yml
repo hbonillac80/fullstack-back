@@ -17,4 +17,4 @@ jobs:
       - name: Pylint
         run: pylint $(find . -name "*.py" | xargs)
       - name: Pytest
-        run: pytest 'ls -R|grep test_*.py$|xargs'
+        run: pytest $(find . -name "test_*.py" | xargs)
